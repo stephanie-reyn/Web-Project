@@ -22,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Check if username and password are correct
     if (check_login($username, $password)) {
-        session_start();
         $_SESSION['username'] = $username;
         header('Location: dashboard.php');
         exit;
@@ -44,26 +43,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <div class="login">
-        <h2>Welcome</h2>
-        <?php
-        // Check if there is an error message for accessing a restricted page without login in the URL parameters
-        if (isset($_GET['error']) && $_GET['error'] === 'access') {
-            echo '<p>Login required. Please log in to access this page.</p>';
-        } elseif (isset($_GET['error']) && $_GET['error'] === 'login') {
-            // Check if there is an error message for incorrect login credentials in the URL parameters
-            echo '<p>Login failed. Please try again.</p>';
-        }
-        ?>
-        <form method="post">
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-            <br>
-            <input type="submit" value="Login">
-        </form>
+    <div class="login-form">
+        <div class="login">
+            <h2>Welcome</h2>
+            <?php
+            // Check if there is an error message for accessing a restricted page without login in the URL parameters
+            if (isset($_GET['error']) && $_GET['error'] === 'access') {
+                echo '<p>Login required. Please log in to access this page.</p>';
+            } elseif (isset($_GET['error']) && $_GET['error'] === 'login') {
+                // Check if there is an error message for incorrect login credentials in the URL parameters
+                echo '<p>Login failed. Please try again.</p>';
+            }
+            ?>
+            <form method="post">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
     </div>
 
 </body>
