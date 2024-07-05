@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['HTTP_HOST'] == 'users.multimediatechnology.at') {
-    $DB_NAME = "fhs50557_mmp1";
+    $DB_NAME = "fhs50557_wp";
     $DB_USER = "fhs50557";
     $DB_PASS = "baasQoPBVBTd";  // fill in password here!!
     $DSN = "pgsql:dbname=$DB_NAME;host=localhost";

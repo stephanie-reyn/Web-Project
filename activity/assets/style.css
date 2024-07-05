@@ -118,3 +118,40 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
 }
+
+/*  Profile */
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+a[href='add_user.php'] {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #0056b3;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+table tr {
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    padding: 0 10px;
+}
+
+table th {
+    border-bottom: 1px solid #ccc;
+
+}

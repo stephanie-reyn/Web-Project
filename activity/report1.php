@@ -57,7 +57,7 @@ echo "<h1>Newb</h1>";
 echo "<a href='add_report_channel1.php' class='add-report'>Add Report</a>";
 
 // Display the detailed activity table
-echo "<table border='1' style='margin-top:20px;'>";
+echo "<table>";
 echo "<tr>";
 echo "<th>Date</th>";
 

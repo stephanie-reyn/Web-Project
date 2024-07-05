@@ -19,18 +19,19 @@ $users = $stmt->fetchAll();
     <h2>Users</h2>
 
     <a href="add_user.php">Add User</a>
-
-    <table>
-        <tr>
-            <th>Username</th>
-            <th>Description</th>
-        </tr>
-        <?php
-        foreach ($users as $user) {
-            echo "<tr>";
-            echo "<td>" . htmlspecialchars($user->username) . "</td>";
-            echo "<td>" . htmlspecialchars($user->userdescription) . "</td>";
-            echo "</tr>";
-        }
-        ?>
-    </table>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Description</th>
+            </tr>
+            <?php
+            foreach ($users as $user) {
+                echo "<tr>";
+                echo "<td>" . htmlspecialchars($user->username) . "</td>";
+                echo "<td>" . htmlspecialchars($user->userdescription) . "</td>";
+                echo "</tr>";
+            }
+            ?>
+        </table>
+    </div>

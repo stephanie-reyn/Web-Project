@@ -1,0 +1,34 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "users.multimediatechnology.at",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "MMT_DB",
+            "database": "db1",
+            "username": "db1_reader"
+        },
+        {
+            "previewLimit": 50,
+            "server": "users.multimediatechnology.at",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "MMT_Modial",
+            "database": "mondial",
+            "username": "db1_reader"
+        },
+        {
+            "previewLimit": 50,
+            "server": "users.multimediatechnology.at",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "MMT_WP",
+            "database": "fhs50557_wp",
+            "username": "fhs50557"
+        }
+    ]
+}
